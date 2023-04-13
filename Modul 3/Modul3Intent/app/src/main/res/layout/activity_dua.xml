@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityDua"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    android:padding="60dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPEN DATA"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/open data/"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Data adalah data yang dapat diakses dan dimanfaatkan secara bebas, digunakan ulang serta didistribusi ulang oleh siapapun."
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:justificationMode="inter_word"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dengan open data anda bisa akses koleksi data dan terlengkap di Desa Alang-Alang dengan cepat, mudah, dan akurat dibantu dengan berbagai fitur bermanfaat. Cara mencari data, klik ikon kaca pembesar, dan inputkan data yang akan di cari."
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:justificationMode="inter_word"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="14dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="134dp"
+            android:layout_height="75dp"
+            android:background="@drawable/border_img"
+            app:srcCompat="@drawable/img1"
+            android:layout_marginRight="15dp"/>
+
+        <ImageView
+            android:layout_width="134dp"
+            android:layout_height="75dp"
+            android:background="@drawable/border_img"
+            app:srcCompat="@drawable/img2"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Website"
+        android:textAllCaps="false"
+        android:textColor="@color/blue"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+
+</LinearLayout>
