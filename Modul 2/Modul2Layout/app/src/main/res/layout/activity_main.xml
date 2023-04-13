@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="15dp"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvWelcome">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="227dp"
+            app:srcCompat="@drawable/header"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Billing Warnet"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:shadowColor="#000000"
+            android:shadowDx="5"
+            android:shadowDy="10"
+            android:shadowRadius="10"/>
+    </FrameLayout>
+
+    <TableLayout
+        android:id="@+id/tlMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flMain"
+        android:layout_marginTop="16dp"
+        android:background="@color/light_gray">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvHead1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Komputer"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvHead2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama User"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvHead3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waktu"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvHead4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biaya"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvBody1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Komputer 02"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvBody2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hoila"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvBody3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02:34:23"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvBody4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16.800"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvBody5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Komputer 05"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvBody6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lah Iya"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvBody7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03:05:46"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvBody8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21.100"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:textColor="@color/black"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/lyMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tlMain"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"/>
+
+        <Button
+            android:id="@+id/btnPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRINT"
+            android:layout_marginLeft="14dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyMain"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Riwayat"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@color/light_gray">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Komputer"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama User"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Waktu"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biaya"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"/>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Komputer 03"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanya aja"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01:23:23"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14.800"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Komputer 02"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HAHAHAH"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="04:23:46"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26.000"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Komputer 02"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ora"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01:43:46"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.000"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Komputer 04"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="chuakss"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02:54:32"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19.900"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
