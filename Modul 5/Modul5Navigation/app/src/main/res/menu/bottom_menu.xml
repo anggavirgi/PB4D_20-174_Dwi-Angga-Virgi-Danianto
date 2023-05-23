@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/firstFragment"
+        android:title="Alarm"
+        android:icon="@drawable/ic_clock" />
+    <item
+        android:id="@+id/secondFragment"
+        android:title="Jam Dunia"
+        android:icon="@drawable/ic_world"/>
+    <item
+        android:id="@+id/thirdFragment"
+        android:title="Stopwatch"
+        android:icon="@drawable/ic_stopwatch"/>
+
+</menu>
